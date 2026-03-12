@@ -31,7 +31,12 @@ To get a local copy up and running, follow these simple steps:
 4. Start the development server:
    ```bash
    npm run dev
-5. Open your browser and visit the local link provided in the terminal (usually http://localhost:5173/).  
+5. Open your browser and visit the local link provided in the terminal (usually http://localhost:5173/).
+<p aling= "center">
+
+<img width="1153" height="664" alt="react" src="https://github.com/user-attachments/assets/5b16812a-06a3-476b-b9c4-fadbea459795" />
+
+</p>  
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
