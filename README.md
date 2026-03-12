@@ -1,3 +1,33 @@
+# 🚀 Productivity Dashboard
+
+A modern, fast, and responsive React web application built with Vite. This project serves as a personal task manager that saves your data directly to your browser's local storage, ensuring you never lose your progress.
+
+## ✨ Features
+
+* **Task Management:** Add, complete, and delete tasks easily.
+* **Local Storage Persistence:** Your tasks are saved automatically in the browser. They remain even after refreshing or closing the tab.
+* **Dynamic Progress Bar:** Visual feedback that calculates your daily productivity percentage based on completed tasks.
+* **Modern UI:** A sleek dark mode design with smooth hover effects and transitions.
+* **Professional Icons:** Integrated with `lucide-react` for a clean and consistent visual experience.
+
+## 🛠️ Tech Stack
+
+* **Framework:** React 18
+* **Build Tool:** Vite
+* **Styling:** Pure CSS (Custom variables, Flexbox, Dark Mode)
+* **Icons:** Lucide React
+* **Deployment:** Netlify
+
+## 💻 Running Locally
+
+To get a local copy up and running, follow these simple steps:
+
+1. Clone the repository (or download the files).
+2. Open your terminal in the project directory.
+3. Install the dependencies:
+   ```bash
+   npm install
+   
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
