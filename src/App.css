@@ -1,0 +1,196 @@
+/* Reseteo básico y variables */
+:root {
+  --fondo: #0f172a;
+  --tarjeta: #1e293b;
+  --acento: #3b82f6;
+  --texto: #f8fafc;
+  --texto-secundario: #94a3b8;
+  --borde: #334155;
+  --rojo: #ef4444;
+}
+
+body {
+  margin: 0;
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.app-contenedor {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Cabecera */
+.header {
+  margin-bottom: 2rem;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.titulo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.icono-titulo {
+  color: var(--acento);
+}
+
+/* Tarjeta de progreso */
+.tarjeta-progreso {
+  background-color: var(--tarjeta);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--borde);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.progreso-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.barra-fondo {
+  width: 100%;
+  height: 8px;
+  background-color: var(--borde);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.barra-relleno {
+  height: 100%;
+  background-color: var(--acento);
+  border-radius: 999px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Formulario */
+.formulario {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.formulario input {
+  flex-grow: 1;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--borde);
+  background-color: var(--tarjeta);
+  color: var(--texto);
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.formulario input:focus {
+  outline: none;
+  border-color: var(--acento);
+}
+
+.btn-agregar {
+  background-color: var(--acento);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-agregar:hover {
+  background-color: #2563eb;
+}
+
+.btn-agregar:active {
+  transform: scale(0.95);
+}
+
+/* Lista de tareas */
+.lista-tareas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tarea {
+  display: flex;
+  align-items: center;
+  background-color: var(--tarjeta);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--borde);
+  gap: 1rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.tarea:hover {
+  border-color: var(--texto-secundario);
+  transform: translateX(4px);
+}
+
+.texto-tarea {
+  flex-grow: 1;
+  font-size: 1.05rem;
+  transition: color 0.3s;
+}
+
+.tarea.completada .texto-tarea {
+  text-decoration: line-through;
+  color: var(--texto-secundario);
+}
+
+/* Botones de acción (iconos) */
+.btn-icono {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: var(--texto-secundario);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.btn-icono.check:hover {
+  color: var(--acento);
+  transform: scale(1.1);
+}
+
+.tarea.completada .btn-icono.check {
+  color: var(--acento);
+}
+
+.btn-icono.eliminar:hover {
+  color: var(--rojo);
+  transform: scale(1.1);
+}
+
+.mensaje-vacio {
+  text-align: center;
+  color: var(--texto-secundario);
+  padding: 2rem;
+  background-color: var(--tarjeta);
+  border-radius: 8px;
+  border: 1px dashed var(--borde);
+}
